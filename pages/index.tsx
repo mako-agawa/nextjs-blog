@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 import utilStyles from "../styles/utils.module.css";
 
 import { getSortedPostsData } from "../lib/posts";
@@ -60,6 +60,7 @@ export default function Home({ allPostsData }: { allPostsData: PostData[] }) {
                 <img
                   src={`${thumbnail}`}
                   className={`${styles.thumbnailImage}`}
+                  alt="a"
                 />
               </Link>
               <Link legacyBehavior href={`/posts/${id}`}>
